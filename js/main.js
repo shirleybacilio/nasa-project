@@ -42,5 +42,4 @@ $(".espacio").change(function() {
 				};
 			});
 
-		  		(function(a,c,e,f,d,b){a.hj=a.hj||function(){(a.hj.q=a.hj.q||[]).push(arguments)};a._hjSettings={hjid:94039,hjsv:5};d=c.getElementsByTagName("head")[0];b=c.createElement("script");b.async=1;b.src=e+a._hjSettings.hjid+f+a._hjSettings.hjsv;d.appendChild(b)})(window,document,"//static.hotjar.com/c/hotjar-",".js?sv\x3d");</script><script type="text/javascript" id="">var $buoop={c:2};function $buo_f(){var a=document.createElement("script");a.src="//browser-update.org/update.min.js";document.body.appendChild(a)}try{document.addEventListener("DOMContentLoaded",$buo_f,!1)}catch(a){window.attachEvent("onload",$buo_f)};
 		});

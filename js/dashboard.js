@@ -11,12 +11,7 @@ $(document).ready(function(){
 		document.cookie="closed-alert=false";
 	})
 
-	// menu height
-	targetHeight = $('.site-content').height() + 49;
-	$('.site-menu').css("height",targetHeight + "px");
-
-	if(getCookie('closed-alert') == 'true'){
-		$(".msge-row").hide();
+	
 	}
 
 

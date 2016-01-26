@@ -1,5 +1,102 @@
 
+/* Shortcuts */
 
+.pd-0 {
+  padding: 0;
+}
+.pd-2{
+  padding: 2%;
+}
+.pd-3{
+  padding: 3%;
+}
+.pt-5 {
+  padding-top: 5%;
+}
+.pt-10 {
+  padding-top: 10%;
+}
+
+.pb-5{
+  padding-bottom: 5% !important;
+}
+.pd-5 {
+  padding: 5%;
+}
+.pd-5-10{
+  padding: 5% 10%;
+}
+.mg-0{
+  margin: 0;
+}
+.w-100{
+  width: 100%;
+}
+.w-30{
+  width: 30%;
+}
+.lh{
+  line-height: 1.5;
+}
+.text-bold{
+  font-weight: bold;
+}
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.text-white{
+  color: white;
+}
+.text-gray{
+  color: rgb(83, 88, 95);
+}
+.text-blue{
+ color: #192951;
+}
+.a-none-decoration{
+  text-decoration: none;
+}
+.bg-gray{
+  background-color: #F2F2F2;
+}
+.bg-white{
+  background-color: #fff;
+}
+.bg-black{
+  background-color: #4D4D4D;
+}
+.text-gray{
+  color:#F2F2F2;
+}
+.text-black{
+  color: #4D4D4D;
+}
+.text-green{
+  color: #5E8039;
+}
+.text-white{
+  color:#fff;
+}
+.text-yellow{
+  color: #fac60e;
+}
+.bg-img-block{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.titulo-azul{
+  color: #0072B6;
+  font-family: "sgothic-rgcap";
+  font-weight: bold;
+}
 /*INOCOS DEL ASIDE*/
 
 .nav-main > li.active-menu.mis-estudios a div {
@@ -177,3 +274,85 @@
 }
 
 ----------------------------------------------------------------------------
+
+.inicio{
+  font-weight: bold;
+  color: #fff;
+}
+
+/*Checkbox*/
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left:0; top: 2px;
+  width: 17px; height: 17px;
+  border: 1px solid #ddd;
+ 
+  border-radius: 0px;
+
+}
+[type="checkbox"]:checked + label:before {
+  border: 0px;
+  }
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  border: 2px solid #3399FF;
+  content: '✔';
+  position: absolute;
+  top: 3px; left: 2px;
+  font-size: 14px;
+  line-height: 0.8;
+  color: #3399FF;
+  transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+
+/*SITE MENU*/
+
+.nav-main>li{
+  border: none !important;
+}
+select.form-control.form-select{
+  background: url(http://recursosinvestigacion.upc.edu.pe/sites/default/files/desplegable.png);
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 100%; /*77%;*/
+    background-color: #fff !important;
+    outline: none !important;
+    box-shadow:none !important;
+  border: 1px solid #818282;
+}
+blockquote p{
+  font-size: 14px;
+}
