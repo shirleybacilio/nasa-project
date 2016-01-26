@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <title>Sistema de encuestas</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+        <!-- APP STYLES -->
+	    <!--[if IE]>
+	    <link rel="stylesheet" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/stylesheets/ie.css"> 
+	    <![endif]-->
+	    <!--[if IE 8]>
+	    <link rel="stylesheet" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/stylesheets/old_ie.css"> 
+	    <link rel="stylesheet" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/stylesheets/ie8.css"> 
+	    <![endif]-->
+	    <!--[if !IE]> -->
+	    <link rel="stylesheet" href="./css/bootstrap-select.min.css"> 
+	    <!-- <![endif]-->
+	    <!--[if IE 9]>
+	    <link rel="stylesheet" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/stylesheets/app/plugins/bootstrap-select.min.css"> 
+	    <link rel="stylesheet" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/stylesheets/ie9.css"> 
+	    <![endif]-->
+	    <link rel="stylesheet" type="text/css" href="./css/fuentes.css">
+	    <!-- regular -->
+	    <link rel="stylesheet" href="./css/main.min.css">
+	    <!-- print -->
+	    <link rel="stylesheet" href="./css/main_print.css" media="print">
+
+        <!-- Modernizr -->
+        <script src="js/modernizr-custom.js"></script>
+        <script src="js/jquery.min.js"></script>
+	    <!-- Flexslider -->
+	    <script src="js/jquery.flexslider-min.js"></script>
+	    <script type="text/javascript" charset="utf-8">
+	      $(window).load(function() {$('.flexslider').flexslider();});
+	    </script>
+
+    </head>
+   	<body>
+   		<div class="site-wrapper clearfix">
+        <div class="site-header hidden-sm hidden-xs">
+          <div class="container-fluid">
+            <div class="header-global clearfix">
+              <div class="pull-left crisol">
+                <img class="img-center pt-7" src="./images/isotipo_upc.png" alt="">
+              </div>
+              <div class="pull-left mt-7">
+                <span class="solano-bold-20 black-text">Mi UPC</span>
+              </div>
+              <div class="pull-right pr-14 pt-7">
+                <ul class="list-unstyled">
+                  <li class="pull-left mr-14"><span class="solano-bold-16 black-text"><a id="lnk_ext_Portal" class="black-link" href="http://www.upc.edu.pe/" target="_blank">Portal</a></span></li>
+                  <li class="pull-left mr-14"><span class="solano-bold-16 black-text"><a id="lnk_ext_Servicios" class="black-link" href="http://www.upc.edu.pe/acerca-de-upc/servicios" target="_blank">Servicios</a></span></li>
+                  <li class="pull-left mr-14"><span class="solano-bold-16 black-text"><a id="lnk_ext_Blogs" class="black-link" href="http://blogs.upc.edu.pe/" target="_blank">Blogs</a></span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="header-no-global header-estudiante" style="background-image:url(&#39;./images/header_no_global_estudiante.png&#39;)">
+              <div class="inicio">
+                <a id="lnk_int_Inicio" href="#">
+                  <div class="inicio-icon"></div>
+                  <span>Inicio</span>
+                </a>
+              </div>
+              <div class="pull-left">
+                <ul>
+                  <li class="ml-21 mr-21 pt-7">
+                    <a id="lnk_ext_Correo" class="text-muted" href="https://www.outlook.com/upc.edu.pe" target="_blank">
+                      <div class="text-center">
+                        <img src="./images/white_mail.png" class="block mb-7" alt="">
+                        <span class="text-muted">Correo</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="ml-21 mr-21">
+                    <a id="lnk_ext_AulaVirtual" class="text-muted" href="https://aulavirtual.upc.edu.pe/" target="_blank">
+                      <div class="text-center">
+                        <img src="./images/aula_virtual.png" class="block mb-7" alt="">
+                        <span class="text-muted">Aula Virtual</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="ml-21 mr-21 pt-3">
+                    <a id="lnk_ext_Impresiones" class="text-muted" href="http://intranet.upc.edu.pe/Loginintermedia/loginupc.aspx?wap=669" target="_blank">
+                      <div class="text-center">
+                        <img src="./images/print_new.png" class="block mb-7" alt="">
+                        <span class="text-muted">Impresiones</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="ml-21 mr-21">
+                    <div class="search-trigger">
+                      <img src="./images/search_white.png" class="block">
+                      <span>&nbsp;</span>
+                    </div> 
+                  </li>
+                  <li class="pt-3">
+                    <div class="search-bar">
+                      <form method="post" action="http://ec2-52-91-192-232.compute-1.amazonaws.com/index.php/buscar/result">
+                        <input type="hidden" name="csrf_token" value="e6a74512ee38afbabdaee9516f281f5807fca8bc"> <!-- Important! -->
+                        <input type="hidden" name="XID" value="e6a74512ee38afbabdaee9516f281f5807fca8bc">
+                        <input type="text-muted" name="keywords" id="keywords" value="" size="18" maxlength="100" class="zizou-thin-12 form-control" placeholder="Introduce tu búsqueda">
+                        <input id="btn_int_Buscar" type="submit" value="submit" class="hidden submit">
+                        <span>&nbsp;</span>
+                      </form>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="pull-right">
+                <div class="text-center pull-left pt-28 pr-21">
+                  <span class="text-muted zizou-22 hidden-sm">
+
+                    Hola 
+
+                    Manuel Alejandro</span>
+                  </div>
+                  <div class="dropdown avatar pt-7 pull-left">
+                    <div class="dropdown-toggle relative" id="dropdownMenu1" data-toggle="dropdown">
+                      <div id="ie-avatar"></div> 
+                      <img id="develar_opciones_usuario" class="absolute" src="./images/white_arrow_down.png" alt="">
+                    </div>
+                    <ul class="dropdown-menu" role="menu">
+                      <li class="dditem ddmain" role="presentation"><a id="lnk_int_MisDatos" role="menuitem" tabindex="-1" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/perfil">Mis Datos</a></li>
+                      <li role="presentation" class="divider"></li>
+                      <li class="dditem ddmain" role="presentation"><a id="lnk_int_VerTutorial" role="menuitem" tabindex="-1" data-toggle="modal" data-target="#myModal">Ver Tutorial</a></li>
+                      <li role="presentation" class="divider"></li>
+                      <li class="dditem ddmain" role="presentation"><a id="lnk_int_CerrarSesion" role="menuitem" tabindex="-1" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/login/salir">Cerrar Sesión</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+        <!--Shir-->
+         <!-- Modal ends -->
+
+          <div id="mobile-nav" class="hidden-md hidden-lg container-fluid p-0">
+            <div class="white-header col-xs-12">
+              <img src="./images/isotipo_upc.png" class="pt-7 pull-left">  
+              <span class="solano-bold-28 pull-left pt-7 pl-7 uppercase">Mi UPC</span>
+            </div>
+
+            <div class="col-xs-12">
+              <div class="col-sm-0-5 col-xs-0-5"></div>
+              <div class="col-sm-11 col-xs-12 blue-menu p-0 pl-35">
+                <div class="col-sm-2 col-xs-2 text-center blue-menu-option pt-7 pl-0 pb-7">
+                  <a id="lnk_ext_Correo" class="text-muted" href="https://www.outlook.com/upc.edu.pe" target="_blank">
+                    <img src="./images/white_mail.png" class="block" alt="">
+                  </a>
+                </div>
+                <div class="col-sm-3 col-xs-3 text-center blue-menu-option p-7">
+                 <a id="lnk_ext_AulaVirtual" class="text-muted" href="https://aulavirtual.upc.edu.pe/" target="_blank">
+                  <img src="./images/aula_virtual.png" class="block " alt="">
+                </a>
+              </div>
+              <div class="col-sm-2 col-xs-2 text-center blue-menu-option p-7">
+                <a id="lnk_ext_Impresiones" class="text-muted" href="http://intranet.upc.edu.pe/Loginintermedia/loginupc.aspx?wap=669" target="_blank">
+                  <img src="./images/print_new.png" class="block" alt="">
+                </a>
+              </div>
+              <div class="blue-menu-option pull-right col-sm-2 col-sm-offset-3 col-xs-4 col-xs-offset-1 border-white-right p-7 blue-menu-option">
+                <div class="button text-center" type="button" data-toggle="collapse" data-target="#collapseMobile" aria-expanded="false" aria-controls="collapseMobile">
+                  <img class="inline-block" src="./images/bars.png" alt="">
+                  <span class="pl-7">MENU</span>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse hidden-md hidden-lg" id="collapseMobile">
+         <ul class="list-unstyled mobile-menu">
+           <li class="parent"><a id="lnk_int_Inicio" href="//Inicio _ Mi UPC.html">Inicio</a></li>
+
+           <li class="parent">
+             <span>Mis Estudios</span>
+             <ul class="list-unstyled child" style="display: none;">
+
+               <li><a id="lnk_int_CicloActualMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-estudios/ciclo-actual">Ciclo Actual</a></li>
+
+               <li><a id="lnk_int_MiCarreraMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-estudios/mi-carrera">Mi Carrera</a></li>
+
+               <li><a id="lnk_int_AvancedemiCarreraMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-estudios/avance-de-mi-carrera">Avance de mi Carrera</a></li>
+
+               <li><a id="lnk_int_NotasDetalladasMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-estudios/notas-detalladas">Notas Detalladas</a></li>
+
+               <li><a id="lnk_int_MisExámenesMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-estudios/mis-examenes">Mis Exámenes</a></li>
+
+               <li><a id="lnk_int_InglésMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-estudios/mi-ingles">Inglés</a></li>
+
+               <li><a id="lnk_int_TalleresMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-estudios/talleres">Talleres</a></li>
+
+             </ul> 
+
+           </li>
+
+           <li class="parent">
+             <span>Mis Trámites</span>
+             <ul class="list-unstyled child" style="display: none;">
+
+               <li><a id="lnk_int_TrámitesencursoMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-tramites/estado-actual">Trámites en curso</a></li>
+
+               <li><a id="lnk_int_TrámitesdelacarreraMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-tramites/tramites-de-la-carrera">Trámites de la carrera</a></li>
+
+               <li><a id="lnk_int_OtrostrámitesMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-tramites/otros-tramites">Otros trámites</a></li>
+
+             </ul> 
+
+           </li>
+
+           <li class="parent">
+             <span>Mis Finanzas</span>
+             <ul class="list-unstyled child" style="display: none;">
+
+               <li><a id="lnk_int_MisPagosMovil" href="#">Mis Pagos</a></li>
+
+               <li><a id="lnk_int_InformaciónFinancieraMovil" href="#">Información Financiera</a></li>
+
+               <li><a id="lnk_int_ComprasMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-finanzas/compras">Compras</a></li>
+
+               <li><a id="lnk_int_BecasyCréditoEducativoMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-finanzas/becas-creditos">Becas y Crédito Educativo</a></li>
+
+             </ul> 
+
+           </li>
+
+           <li class="parent">
+             <span>Mis Reservas</span>
+             <ul class="list-unstyled child" style="display: none;">
+
+               <li><a id="lnk_int_ReservadeCubículosMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-reservas/reserva-de-cubiculos">Reserva de Cubículos</a></li>
+
+               <li><a id="lnk_int_ReservadeComputadorasMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-reservas/reserva-de-computadoras">Reserva de Computadoras</a></li>
+
+               <li><a id="lnk_int_ReservaEspacioDeportivoMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-reservas/reserva-espacios-deportivos">Reserva Espacio Deportivo</a></li>
+
+               <li><a id="lnk_int_ReservaLaboratorioVirtualMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-reservas/reserva-laboratorio-virtual">Reserva Laboratorio Virtual</a></li>
+
+               <li><a id="lnk_int_OtrasReservasMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-reservas/otras-reservas">Otras Reservas</a></li>
+
+             </ul> 
+
+           </li>
+
+           <li class="parent">
+             <span>Mis Servicios</span>
+             <ul class="list-unstyled child" style="display: none;">
+
+               <li><a id="lnk_int_ImpresionesMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-servicios/impresiones">Impresiones</a></li>
+
+               <li><a id="lnk_int_CentrodeInformaciónMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-servicios/centro-de-informacion">Centro de Información</a></li>
+
+               <li><a id="lnk_int_ReglamentosyManualesMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-servicios/reglamentos-y-manuales">Reglamentos y Manuales</a></li>
+
+               <li><a id="lnk_int_OtrosServiciosMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-servicios/otros-servicios">Otros Servicios</a></li>
+
+             </ul> 
+
+           </li>
+
+           <li class="parent">
+            <a href="http://ec2-52-91-192-232.compute-1.amazonaws.com/mis-noticias" title="" id=""><span>Mis Noticias</span></a>
+          </li>
+
+          <li class="parent">
+            <span>Mi Perfil</span>
+            <ul class="list-unstyled child" style="display: none;">
+              <li><a id="lnk_int_MisDatosMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/perfil">Mis Datos</a></li>
+              <li><a data-toggle="modal" data-target="#myModal" id="">Ver tutorial</a></li>
+            </ul>
+          </li>
+          <li class="parent"><a id="lnk_int_AyudaMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/ayuda">Ayuda</a></li>
+          <li class="parent"><a id="lnk_int_BuscarMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/buscar/buscar_movil">Buscar</a></li>
+          <li><a id="lnk_intCerrarSesionMovil" href="http://ec2-52-91-192-232.compute-1.amazonaws.com/login/salir">Cerrar Sesión</a></li> 
+        </ul>
+      </div>
+
+      <div class="site-menu hidden-sm hidden-xs" style="top: 0px;">
+        <ul class="list-unstyled nav-main">
+        <li> sdfsdfdsfdsf</li>
+		<li>sdfsdfsdfsd</li>
+		<li>warvaf</li>
+		<li>asdvfavaerb</li>
+
+        </ul>
+      </div> 
+  <div class="site-content dashboard">
+    <div class="container-fluid">
+      <div class="row pb-21">
+        <div class="col-sm-0-5 hidden-xs"></div>
+        <div class="col-sm-4">kajdhkajsdhakjsd</div>
+        <div class="col-sm-4">kajdhkajsdhakjsd</div>
+        <div class="col-sm-3">kajdhkajsdhakjsd</div>
+      </div>
+     </div>
+   </div>
+   <footer>
+   	<div class="container">
+   		<div class="row">
+   			<div class="pull-left">
+   				<img src="images/logo-footer.png">
+   			</div>
+   			<div class="pull-right">
+   				
+   			</div>
+   		</div>
+   	</div>
+   </footer>
+
+
+
+
+
+
+   		<script src="js/main.js"></script>	
+   		<script src="js/transition.js"></script>
+   		<script src="js/dropdown.js"></script>
+   		<script src="js/modal.js"></script>
+   		<script src="js/collapse.js"></script>
+   		<script src="js/wurfl.js"></script>
+   		<script src="js/insert-script.js.php"></script><script src="//nav-desktop.js"></script>
+   		<script src="js/velocity.min.js"></script>
+   		<script src="js/global.js"></script>
+   		<script src="js/large_sidebar.js"></script>
+   		<script src="js/jquery.validate.min.js"></script>
+   		<script src="js/dashboard.js"></script>
+
+
+		    <!--[if IE]>
+		  <script src="http://ec2-52-91-192-232.compute-1.amazonaws.com/js/app/src/ie.js"></script>
+		  <![endif]-->
+		  <!--[if IE 8]>
+		  <script src="http://ec2-52-91-192-232.compute-1.amazonaws.com/js/app/src/ie8.js"></script>
+		  <![endif]-->
+		  <!--[if IE 9]>
+		  <script src="http://ec2-52-91-192-232.compute-1.amazonaws.com/js/app/src/ie9.js"></script>
+		  <![endif]-->
+
+
+		 
+
+		
+   	</body>
+</html>
