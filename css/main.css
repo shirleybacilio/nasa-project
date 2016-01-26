@@ -177,3 +177,43 @@
 }
 
 ----------------------------------------------------------------------------
+
+/*DESTACADOS*/
+.bg-white{
+  background-color: white !important;
+}
+.text-red{
+  color: #E42322;
+}
+.text-blue{
+  color: #3399FF;
+}
+.mt-15{
+  margin-top: 15px;
+}
+.mt-40{
+  margin-top: 40px;
+}
+.col-sm-3.col-xs-12.destacados{
+  background-color: white;
+  padding: 2% 1.5% 2%;
+}
+.destacados h2{
+  color: #000;
+  font-size: 2.3em;
+  border-bottom: 1px solid;
+}
+.col-sm-3.col-xs-12.destacados p{
+  line-height: 1.2;
+}
+p.text-blue{
+  text-transform: uppercase;   
+  font-family: 'sgothic-bdcap';
+  font-size: 1.42857em !important;
+}
+p.lowercase{
+  font-size: 1.14286em !important;
+}
+a.pull-right.text-red:hover{
+  color: #E42322;
+}
