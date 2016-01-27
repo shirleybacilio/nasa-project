@@ -415,6 +415,14 @@ p.lowercase{
 a.pull-right.text-red:hover{
   color: #E42322;
 }
+
+select 
+{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -o-appearance:none;
+   appearance:none; 
+}
 .drop-down {
   position: relative;
   margin: 0;
@@ -433,6 +441,8 @@ a.pull-right.text-red:hover{
   outline: none !important;
   box-shadow: none !important;
   border: 1px solid #818282;
+  -webkit-appearance: none;
+
 }
 
 .drop-down:after {
