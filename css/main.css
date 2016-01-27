@@ -288,8 +288,9 @@
 }
 
 ----------------------------------------------------------------------------
-
-<<<<<<< HEAD
+select{
+  color: transparent !important;
+}
 .inicio{
   font-weight: bold;
   color: #fff;
@@ -393,7 +394,7 @@ blockquote p{
   padding: 2% 1.5% 2%;
 }
 .destacados{
-  margin-top: 11.7% !important;
+  margin-top: 11.3% !important;
 }
 .destacados h2{
   color: #000;
@@ -409,9 +410,56 @@ p.text-blue{
   font-size: 1.42857em !important;
 }
 p.lowercase{
-  font-size: 1.14286em !important;
+  font-size: 1em !important;
 }
 a.pull-right.text-red:hover{
   color: #E42322;
->>>>>>> 1bfc395397572951ad63acb645cc58a46ce9c048
 }
+
+
+.drop-down {
+  background: url();
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+  color: transparent;
+  border: 1px solid grey;
+  width: 160px;
+  height: 30px;
+  overflow: hidden;
+  background: url(http://recursosinvestigacion.upc.edu.pe/sites/default/files/desplegable.png);
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 100%;
+    background-color: #fff !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #818282;
+}
+
+.drop-down:after {
+  content: "\25BC";
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  right: 6px;
+}
+
+.drop-down select {
+  width: 100%;
+  font-size: 13px;
+  color: #868789;
+  background-color: transparent;
+  background-image: none;
+  apperance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  box-shadow: none;
+  padding: 5px 15px;
+}
+
+.drop-down select:focus {
+  outline: none;
