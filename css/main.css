@@ -416,28 +416,27 @@ a.pull-right.text-red:hover{
   color: #E42322;
 }
 .drop-down {
-  background: url();
   position: relative;
   margin: 0;
   padding: 0;
   background-color: #ddd;
-  color: transparent;
+  color: #grey !important;
   border: 1px solid grey;
   width: 160px;
   height: 30px;
   overflow: hidden;
   background: url(http://recursosinvestigacion.upc.edu.pe/sites/default/files/desplegable.png);
-    background-repeat: no-repeat;
-    background-size: 26px;
-    background-position: 100%;
-    background-color: #fff !important;
-    outline: none !important;
-    box-shadow: none !important;
-    border: 1px solid #818282;
+  background-repeat: no-repeat;
+  background-size: 26px;
+  background-position: 100%;
+  background-color: #fff !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid #818282;
 }
 
 .drop-down:after {
-  content: "\25BC";
+  content: " ";
   font-size: 10px;
   position: absolute;
   top: 50%;
@@ -448,7 +447,7 @@ a.pull-right.text-red:hover{
 .drop-down select {
   width: 100%;
   font-size: 13px;
-  color: #868789;
+  color: grey !important;
   background-color: transparent;
   background-image: none;
   apperance: none;
