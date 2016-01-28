@@ -32,8 +32,17 @@
 .mg-0{
   margin: 0;
 }
+.m-auto{
+  margin: auto !important;
+}
 .mg-1{
   margin: 1%;
+}
+.mb-3{
+  margin-bottom: 3% !important;
+}
+.mt-3{
+  margin-top: 3% !important;
 }
 .mt-10{
   margin-top: 10%;
@@ -422,20 +431,20 @@ select
   -moz-appearance:none;
   -o-appearance:none;
    appearance:none; 
-}
+} 
 .drop-down {
   position: relative;
   margin: 0;
   padding: 0;
   background-color: #ddd;
-  color: #grey !important;
+  color: grey !important;
   border: 1px solid grey;
   width: 160px;
-  height: 30px;
+  height: 20px;
   overflow: hidden;
   background: url(http://recursosinvestigacion.upc.edu.pe/sites/default/files/desplegable.png);
   background-repeat: no-repeat;
-  background-size: 26px;
+  background-size: 17px;
   background-position: 100%;
   background-color: #fff !important;
   outline: none !important;
@@ -458,7 +467,7 @@ select
   width: 100%;
   font-size: 13px;
   color: grey !important;
-  background-color: transparent;
+  background-color: transparent/9;
   background-image: none;
   apperance: none;
   -webkit-appearance: none;
@@ -470,7 +479,7 @@ select
 
 .drop-down select:focus {
   outline: none;
-}
+}*/
 .panel{
   border-radius: 0px !important;
 }
@@ -759,3 +768,20 @@ select
     -webkit-transform: rotate(180deg); }
 
 
+/*FILTROS EN RESPONSIVE*/
+
+.filtros{
+  width: 100%;
+}
+
+.w-100.col-xs-12.col-sm-12.col-md-12.mobile-menu{
+  padding: 1%;
+}
+
+ul.tr.list-unstyled{
+  padding-left: 5%;
+}
+
+ul.tr.list-unstyled li{
+  padding: 1%;
+}
