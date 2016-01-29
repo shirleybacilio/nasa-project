@@ -412,6 +412,9 @@ blockquote p{
 h4.titulo-azul.mt-30{
   line-height: 1.4;
 }
+.col-sm-3.col-xs-12.destacados p{
+  line-height: 1.2;
+}
 div.text a.text-red{
   float: right !important;
 }
@@ -425,9 +428,6 @@ p.lowercase{
 }
 a.pull-right.text-red:hover{
   color: #E42322;
-}
-@media screen and (min-width: 992px) and (max-width: 1024px) {
-  .col-sm-4.col-md-4.col-xs-12.col-g-4.bg-white.destacados{margin-top:21px;}
 }
 select 
 {
@@ -777,17 +777,21 @@ select
 .filtros{
   width: 100%;
 }
-
 .w-100.col-xs-12.col-sm-12.col-md-12.mobile-menu{
   padding: 1%;
 }
+
 /*
+=======
+
+>>>>>>> ff221171a92515b64e6db896c06c8f6018cdf912
 ul.tr.list-unstyled{
   padding-left: 5%;
 }
 
 ul.tr.list-unstyled li{
   padding: 1%;
+<<<<<<< HEAD
 }
 h2.titulo-azul.pb-5, p.options{
   margin-left: 2.4%;
