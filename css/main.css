@@ -479,7 +479,7 @@ select
 
 .drop-down select:focus {
   outline: none;
-}*/
+}
 .panel{
   border-radius: 0px !important;
 }
@@ -701,7 +701,7 @@ select
     .panel .panel-body .panel-table .tr li {
       padding: 7px 0; }
       .panel .panel-body .panel-table .tr li div h1, .panel .panel-body .panel-table .tr li div h2, .panel .panel-body .panel-table .tr li div h3, .panel .panel-body .panel-table .tr li div h4, .panel .panel-body .panel-table .tr li div h5, .panel .panel-body .panel-table .tr li div h6 {
-        margin: 7px; }
+        margin: 7px 0px !important; }
       .panel .panel-body .panel-table .tr li span {
         -webkit-flex-grow: 0;
         -moz-flex-grow: 0;
