@@ -123,6 +123,17 @@
   font-family: "sgothic-rgcap";
   font-weight: bold;
 }
+
+
+/*HEADER*/
+
+span.solano-bold-20.black-text {
+    margin: 0% 7% !important;
+}
+img.img-center.pt-7 {
+    margin: 0px 68% !important;
+}
+
 /*INOCOS DEL ASIDE*/
 
 .nav-main > li.active-menu.mis-estudios a div {
@@ -781,21 +792,6 @@ select
 .w-100.col-xs-12.col-sm-12.col-md-12.mobile-menu{
   padding: 1%;
 }
-
-/*
-ul.tr.list-unstyled{
-  padding-left: 5%;
-}
-
-ul.tr.list-unstyled li{
-  padding: 1%;
-}
-h2.titulo-azul.pb-5, p.options{
-  margin-left: 2.4%;
-}
-div#content-inner{
-  margin: 0% 3%;
-}*/
 .cuadrado{
   width: 250px;
   height: 250px;
@@ -807,4 +803,7 @@ div#content-inner{
 
 section.bg-white.pd-3{
       margin: 2%;
+}
+.header-global.clearfix {
+    margin: 0% 2% !important;
 }
