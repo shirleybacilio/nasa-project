@@ -421,7 +421,6 @@ blockquote p{
 }
 div.text a.text-red{
   float: right !important;
-  padding: 10px;
 }
 p.text-blue{
   text-transform: uppercase;   
@@ -789,7 +788,6 @@ select
 .w-100.col-xs-12.col-sm-12.col-md-12.mobile-menu{
   padding: 1%;
 }
-<<<<<<< HEAD
 /*
 ul.tr.list-unstyled{
   padding-left: 5%;
@@ -804,8 +802,6 @@ h2.titulo-azul.pb-5, p.options{
 div#content-inner{
   margin: 0% 3%;
 }*/
-=======
->>>>>>> 2e344639b750c58a603a951fb48fe1f132401912
 .cuadrado{
   width: 250px;
   height: 250px;
@@ -830,4 +826,10 @@ section.bg-white.pd-3{
 -o-transform: rotate(90deg);
 -ms-transform: rotate(90deg);
 transform: rotate(90deg);
+}
+
+@media screen and (max-width: 987px) {
+    .servicios {
+        padding: 2%;
+    }
 }
