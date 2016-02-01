@@ -44,12 +44,12 @@
     <div class="site-header hidden-sm hidden-xs">
       <div class="container-fluid">
         <div class="header-global clearfix">
-          <div class="pull-left crisol">
-            <img class="img-center pt-7" src="./images/isotipo_upc.png" alt="">
-        </div>
-        <div class="pull-left mt-7">
-            <span class="solano-bold-20 black-text">Contacto UPC</span>
-        </div>
+          <div class="crisol">
+            <img class="img-crisol pt-7 mg-icono-header" src="./images/isotipo_upc.png" alt="">
+          </div>
+          <div class="pull-left mt-7">
+              <span class="solano-bold-20 black-text">Contacto UPC</span>
+          </div>
         <div class="pull-right pr-14 pt-7">
             <ul class="list-unstyled">
               <li class="pull-left mr-14"><span class="solano-bold-16 black-text"><a id="lnk_ext_Portal" class="black-link" href="http://www.upc.edu.pe/" target="_blank">Portal</a></span></li>
@@ -256,13 +256,10 @@
 </ul>
 </div>
 </div>
-
-
-<div class="container-fluid"> <div class="row">
-       
-    </div>
+<div class="container-fluid">
     <div class="row">
-        <div class="col-sm-1-5 col-md-1-5">
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xs-2">
+          <div class="cuadrado"></div>
          <div class="site-menu col-sm-12 col-md-12 col-xs-12 col-lg-12 hidden-sm hidden-xs pd-2">
           <h2 class="pt-5">Filtros</h2>
           <h4 class="pt-5 pb-5">Servicios</h4>
@@ -311,6 +308,7 @@
                 <input type="checkbox" id="test9" />
                 <label for="test9"><span>Asesoria sobreconstancias de graduación</span></label>
             </li>
+            </li>
           </ul>
          </div>   
         </div> 
@@ -330,7 +328,7 @@
         </div>
         <div for="2" class="panel-body collapse mg-1" id="accdCollapse2">
             <div class="panel-table pb-14 bg-white">
-              <ul class="tr list-unstyled pd-3 ">
+              <ul class="tr list-unstyled pd-3 filtros">
                 <h4 class="pt-5 pb-5">Servicios</h4>
                 <li>
                     <input type="checkbox" id="test13" />
@@ -404,21 +402,21 @@
         </div>
         </div>
         <div class="row pb-21">
+          <div class="servicios">
+            <h2 class="titulo-azul pb-5">Servicios</h2>
+            <p class="options">
+              <a href="#">Inicio</a> > <a href="#">Áreas - Canales de contacto</a> > <a href="#">Asesoria sobre contactos</a> > <a href="#">Asesoria sobre trámites y documentos</a> > <a href="#">Servcio - Sobre traslado interno de carrera</a>
+            </p>
+            <select class="drop-down">
+             
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              
+            </select>    
+          </div>
             <div class="col-sm-8 col-md-8 col-xs-12">
-                <h2 class="titulo-azul pb-5">Servicios</h2>
-                <div class="procesos avance">
-                    <p>
-                      <a href="#">Inicio</a> > <a href="#">Áreas - Canales de contacto</a> > <a href="#">Asesoria sobre contactos</a> > <a href="#">Asesoria sobre trámites y documentos</a> > <a href="#">Servcio - Sobre traslado interno de carrera</a>
-                  </p>
-                  <select class="drop-down">
-                    <optgroup label="ordenar por">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </optgroup> 
-                </select>
-            </div>
-            <br>
+              <br>  
             <div id="content-inner">
                 <section class="bg-white pd-3">
                   <blockquote>
@@ -448,7 +446,7 @@
                     </section>
                 </div>
             </div>
-            <div class="col-sm-4 col-md-4 col-xs-12  bg-white destacados">
+            <div class="col-sm-4 col-md-4 col-xs-12 col-g-4  bg-white destacados">
              <div class="panel mt-21 hidden-xs">
               <div class="panel-head bg-muted">
                 <div class="panel-head left">
@@ -466,7 +464,7 @@
                     <div class="text">
                       <h4 class="titulo-azul mt-15">Pellentesque rutrum henonerit suscipit</h4> 
                       <p>Vivamus tincidunt diam id risus semper eleifend</p>
-                      <a href="#" class="pull-right text-red">Seguir leyendo</a>
+                      <a href="#" class="pull-left text-red">Seguir leyendo</a>
                   </div>
                   <div class="text bg-muted">
                     <h4 class="titulo-azul mt-30">Etiam commodo, justo sit amet efficitur sollicitudin, ligula erat interdum lorem</h4>
@@ -537,33 +535,23 @@
     </div>
     </div>
 </div>
-
-
-
-
 <footer>
     <div class=" bg-gray pd-1 text-center">
-        <div class="container-fluid">
+        <div class="container">
             <div class="col-sm-3">
                 <ul class="list-unstyled">
                     <li><a href="#"><img class="pb-5 pt-5" src="images/logo-footer.png"></a></li>
                 </ul>
             </div>
-            <div class="col-sm-6 text-center text-gray ">
+            <div class="col-sm-7 text-center text-gray ">
                 <p>COPYRIGHT UPC 2014. Prolognación Primavera 2390. Monterrico. Lima - Perú.</p>
                 <p>Teléfonos: 313-3333 | Fax: 313-3344</p>
             </div>
-            <div class="col-sm-3">
-                <ul class="list-unstyled">
-                    <li class="dsp-in"><a href="#"><img src="images/social_facebook.png"></a></li>
-                    <li class="dsp-in"><a href="#"><img src="images/social_twitter.png"></a></li>
-                    <li class="dsp-in"><a href="#"><img src="images/social_youtube.png"></a></li>
-                    <li class="dsp-in"><a href="#"><img src="images/social_flickr.png"></a></li>
-                </ul>
-            </div>
+            <div class="col-sm-2"></div>
         </div>
     </div>  
-</footer>
+</footer> 
+
 
         <script src="js/main.js"></script>	
         <script src="js/transition.js"></script>

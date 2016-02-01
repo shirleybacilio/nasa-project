@@ -123,6 +123,17 @@
   font-family: "sgothic-rgcap";
   font-weight: bold;
 }
+
+
+/*HEADER*/
+
+span.solano-bold-20.black-text {
+    margin: 0% 7% !important;
+}
+img.img-center.pt-7 {
+    margin: 0px 68% !important;
+}
+
 /*INOCOS DEL ASIDE*/
 
 .nav-main > li.active-menu.mis-estudios a div {
@@ -302,7 +313,9 @@ select{
   font-weight: bold;
   color: #fff;
 }
-
+@media screen and (min-width: 320px) and (max-width: 999px) {
+  ul.tr.list-unstyled.pd-3.filtros{margin-left:21px;}
+}
 /*Checkbox*/
 /* Base for label styling */
 [type="checkbox"]:not(:checked),
@@ -400,12 +413,15 @@ blockquote p{
   background-color: white;
 }
 .destacados{
-  margin-top: 13.3% !important;
+  margin-top: 3% !important;
 }
 .destacados h2{
   color: #000;
   font-size: 2.3em;
   border-bottom: 1px solid;
+}
+h4.titulo-azul.mt-30{
+  line-height: 1.4;
 }
 .col-sm-3.col-xs-12.destacados p{
   line-height: 1.2;
@@ -424,7 +440,6 @@ p.lowercase{
 a.pull-right.text-red:hover{
   color: #E42322;
 }
-
 select 
 {
   -webkit-appearance:none;
@@ -701,7 +716,7 @@ select
     .panel .panel-body .panel-table .tr li {
       padding: 7px 0; }
       .panel .panel-body .panel-table .tr li div h1, .panel .panel-body .panel-table .tr li div h2, .panel .panel-body .panel-table .tr li div h3, .panel .panel-body .panel-table .tr li div h4, .panel .panel-body .panel-table .tr li div h5, .panel .panel-body .panel-table .tr li div h6 {
-        margin: 7px 0px !important; }
+        margin: 15px 0px 0px !important; }
       .panel .panel-body .panel-table .tr li span {
         -webkit-flex-grow: 0;
         -moz-flex-grow: 0;
@@ -773,15 +788,42 @@ select
 .filtros{
   width: 100%;
 }
-
 .w-100.col-xs-12.col-sm-12.col-md-12.mobile-menu{
   padding: 1%;
 }
 
+/*
+=======
+
+>>>>>>> ff221171a92515b64e6db896c06c8f6018cdf912
 ul.tr.list-unstyled{
   padding-left: 5%;
 }
 
 ul.tr.list-unstyled li{
   padding: 1%;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+}
+h2.titulo-azul.pb-5, p.options{
+  margin-left: 2.4%;
+}
+div#content-inner{
+  margin: 0% 3%;
+}*/
+.cuadrado{
+  width: 250px;
+  height: 250px;
+  background-color: transparent;
+}
+.servicios{
+  margin-left: 3%;
+}
+
+section.bg-white.pd-3{
+      margin: 2%;
+}
+.header-global.clearfix {
+    margin: 0% 2% !important;
 }
