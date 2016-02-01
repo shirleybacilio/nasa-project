@@ -417,6 +417,7 @@ h4.titulo-azul.mt-30{
 }
 div.text a.text-red{
   float: right !important;
+  padding: 10px;
 }
 p.text-blue{
   text-transform: uppercase;   
@@ -782,16 +783,12 @@ select
 }
 
 /*
-=======
-
->>>>>>> ff221171a92515b64e6db896c06c8f6018cdf912
 ul.tr.list-unstyled{
   padding-left: 5%;
 }
 
 ul.tr.list-unstyled li{
   padding: 1%;
-<<<<<<< HEAD
 }
 h2.titulo-azul.pb-5, p.options{
   margin-left: 2.4%;
