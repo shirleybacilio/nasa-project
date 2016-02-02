@@ -405,11 +405,11 @@ blockquote p{
 .mt-30{
   margin-top: 30px;
 }
+.destacados{
+ margin-top: 3.210% !important;
+}
 .col-sm-3.col-xs-12.destacados{
   background-color: white;
-}
-.destacados{
-  margin-top: 3% !important;
 }
 .destacados h2{
   color: #000;
@@ -421,6 +421,7 @@ blockquote p{
 }
 div.text a.text-red{
   float: right !important;
+  padding: 10px;
 }
 p.text-blue{
   text-transform: uppercase;   
